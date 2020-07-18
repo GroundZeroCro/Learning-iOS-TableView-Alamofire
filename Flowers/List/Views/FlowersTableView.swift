@@ -9,7 +9,7 @@ class FlowersTableView: UITableView {
         leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        register(FlowerCell.self, forCellReuseIdentifier: "cell")
         self.delegate = delegate
         self.dataSource = dataSource
     }

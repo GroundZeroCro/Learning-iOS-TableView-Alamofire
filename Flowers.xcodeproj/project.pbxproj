@@ -10,14 +10,17 @@
 		4950B20FCD5E9709D6890D23 /* FlowersDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B23636A7577E8EDEC5D9 /* FlowersDataSourceProtocol.swift */; };
 		4950B3F5D14EAAC3EEF9D9C1 /* FlowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BF127AC0B73CEDDAC8C3 /* FlowersViewController.swift */; };
 		4950B5C5AC44403D582A8ACF /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B221FB4CE91B88AA16AB /* ToastView.swift */; };
+		4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B7D0D057D478BA20C419 /* FlowerCell.swift */; };
 		4950B6920A6E7E545B2D6311 /* FlowersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B197EC94E65F6A655E42 /* FlowersTableView.swift */; };
 		4950B90824403731180C5A5C /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */; };
 		4950B9F8490560F2CBB42DBE /* FlowersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */; };
+		4950BA75E7DAD240500C0D8B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4C80962700BF344F120 /* Extensions.swift */; };
 		4950BB1C6FBD6B7C67408C4B /* FlowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */; };
 		4950BB6F0D2294FF901D94C3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B00B70528B8A9DE9840F /* Colors.swift */; };
 		4950BB8C0E55892F69F99D7D /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B0EB80EF5B1F5BAC74ED /* DeviceUtils.swift */; };
 		4950BC0BE116465EC1066024 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BCD0320DAE7E6292D0D0 /* Constants.swift */; };
 		4950BC21C0284EE9FEB2657A /* NoContentWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BE3BA97642A4277F40BD /* NoContentWarningView.swift */; };
+		4950BE2D5372569AD230391B /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */; };
 		761647F824C319EE009EE290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761647F724C319EE009EE290 /* AppDelegate.swift */; };
 		761647FA24C319EE009EE290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761647F924C319EE009EE290 /* SceneDelegate.swift */; };
 		7616480124C319EF009EE290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7616480024C319EF009EE290 /* Assets.xcassets */; };
@@ -30,10 +33,13 @@
 		4950B00B70528B8A9DE9840F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Utils/Colors.swift; sourceTree = "<group>"; };
 		4950B0EB80EF5B1F5BAC74ED /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtils.swift; path = Utils/DeviceUtils.swift; sourceTree = "<group>"; };
 		4950B197EC94E65F6A655E42 /* FlowersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersTableView.swift; path = List/Views/FlowersTableView.swift; sourceTree = "<group>"; };
+		4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimensions.swift; path = Utils/Dimensions.swift; sourceTree = "<group>"; };
 		4950B221FB4CE91B88AA16AB /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Common/ToastView.swift; sourceTree = "<group>"; };
 		4950B23636A7577E8EDEC5D9 /* FlowersDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSourceProtocol.swift; path = List/Data/FlowersDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationBar.swift; path = Common/MyNavigationBar.swift; sourceTree = "<group>"; };
+		4950B4C80962700BF344F120 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersResponse.swift; path = List/Data/FlowersResponse.swift; sourceTree = "<group>"; };
+		4950B7D0D057D478BA20C419 /* FlowerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowerCell.swift; path = List/Views/FlowerCell.swift; sourceTree = "<group>"; };
 		4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSource.swift; path = List/Data/FlowersDataSource.swift; sourceTree = "<group>"; };
 		4950BCD0320DAE7E6292D0D0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
 		4950BE3BA97642A4277F40BD /* NoContentWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoContentWarningView.swift; path = Common/NoContentWarningView.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 				4950BE3BA97642A4277F40BD /* NoContentWarningView.swift */,
 				4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */,
 				4950B221FB4CE91B88AA16AB /* ToastView.swift */,
+				4950B4C80962700BF344F120 /* Extensions.swift */,
+				4950B7D0D057D478BA20C419 /* FlowerCell.swift */,
+				4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */,
 			);
 			path = Flowers;
 			sourceTree = "<group>";
@@ -246,6 +255,9 @@
 				4950BC21C0284EE9FEB2657A /* NoContentWarningView.swift in Sources */,
 				4950B90824403731180C5A5C /* MyNavigationBar.swift in Sources */,
 				4950B5C5AC44403D582A8ACF /* ToastView.swift in Sources */,
+				4950BA75E7DAD240500C0D8B /* Extensions.swift in Sources */,
+				4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */,
+				4950BE2D5372569AD230391B /* Dimensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
