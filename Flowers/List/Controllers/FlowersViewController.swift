@@ -3,7 +3,7 @@ import UIKit
 
 class FlowersViewController: UIViewController {
 
-    private var characters: [String] = []
+    private var flowers: [String] = []
     // Common
     private var navigation: MyNavigationBar!
     private let tableView = FlowersTableView()
@@ -29,14 +29,14 @@ class FlowersViewController: UIViewController {
 
 extension FlowersViewController: FlowersProtocol {
 
-    func onSuccess(_ posts: [String]) {
-        characters = posts
+    func onSuccess(_ flowers: [String]) {
+        self.flowers = flowers
         tableView.reloadData()
     }
 
     func onError(message: String?) {
         if message != nil {
-            ToastView.popUp(context: self, msg: "Success")
+            ToastView.popUp(context: self, msg: message!)
             noContentWarningView.changeVisibility(isVisible: true)
         }
     }
@@ -45,12 +45,12 @@ extension FlowersViewController: FlowersProtocol {
 extension FlowersViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        characters.count
+        flowers.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = characters[indexPath.row]
+        cell.textLabel?.text = flowers[indexPath.row]
         return cell
     }
 }
