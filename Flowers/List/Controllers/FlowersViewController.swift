@@ -4,7 +4,7 @@ import UIKit
 class FlowersViewController: UIViewController {
 
     private var flowers: [String] = []
-    // Common
+    // Views
     private var navigation: MyNavigationBar!
     private let tableView = FlowersTableView()
     private let noContentWarningView = NoContentWarningView()
@@ -51,6 +51,13 @@ extension FlowersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FlowerCell
         cell.name = flowers[indexPath.row]
+        cell.onOpenButtonClickAction = {
+            self.onOpenButtonClick()
+        }
         return cell
+    }
+
+    private func onOpenButtonClick() -> Void {
+        self.present(DetailsViewController(), animated: true)
     }
 }

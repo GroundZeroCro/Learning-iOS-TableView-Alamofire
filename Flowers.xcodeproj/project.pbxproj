@@ -15,6 +15,7 @@
 		4950B90824403731180C5A5C /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */; };
 		4950B9F8490560F2CBB42DBE /* FlowersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */; };
 		4950BA75E7DAD240500C0D8B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4C80962700BF344F120 /* Extensions.swift */; };
+		4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4750E3EE591017C886D /* DetailsViewController.swift */; };
 		4950BB1C6FBD6B7C67408C4B /* FlowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */; };
 		4950BB6F0D2294FF901D94C3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B00B70528B8A9DE9840F /* Colors.swift */; };
 		4950BB8C0E55892F69F99D7D /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B0EB80EF5B1F5BAC74ED /* DeviceUtils.swift */; };
@@ -37,6 +38,7 @@
 		4950B221FB4CE91B88AA16AB /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Common/ToastView.swift; sourceTree = "<group>"; };
 		4950B23636A7577E8EDEC5D9 /* FlowersDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSourceProtocol.swift; path = List/Data/FlowersDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationBar.swift; path = Common/MyNavigationBar.swift; sourceTree = "<group>"; };
+		4950B4750E3EE591017C886D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = Details/DetailsViewController.swift; sourceTree = "<group>"; };
 		4950B4C80962700BF344F120 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersResponse.swift; path = List/Data/FlowersResponse.swift; sourceTree = "<group>"; };
 		4950B7D0D057D478BA20C419 /* FlowerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowerCell.swift; path = List/Views/FlowerCell.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				4950B4C80962700BF344F120 /* Extensions.swift */,
 				4950B7D0D057D478BA20C419 /* FlowerCell.swift */,
 				4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */,
+				4950B4750E3EE591017C886D /* DetailsViewController.swift */,
 			);
 			path = Flowers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				4950BA75E7DAD240500C0D8B /* Extensions.swift in Sources */,
 				4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */,
 				4950BE2D5372569AD230391B /* Dimensions.swift in Sources */,
+				4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
