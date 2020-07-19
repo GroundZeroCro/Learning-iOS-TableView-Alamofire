@@ -52,12 +52,14 @@ extension FlowersViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FlowerCell
         cell.name = flowers[indexPath.row]
         cell.onOpenButtonClickAction = {
-            self.onOpenButtonClick()
+            self.onOpenButtonClick(flower: self.flowers[indexPath.row])
         }
         return cell
     }
 
-    private func onOpenButtonClick() -> Void {
-        self.present(DetailsViewController(), animated: true)
+    private func onOpenButtonClick(flower: String) -> Void {
+        let detailsController = DetailsViewController()
+        detailsController.flower = flower
+        self.present(detailsController, animated: true)
     }
 }
