@@ -18,7 +18,7 @@ class FlowersViewController: UIViewController {
     }
 
     private func instantiateViews(view: UIView) {
-        navigation = MyNavigationBar(title: Constants.flowersNavigationTitle)
+        navigation = MyNavigationBar(largeTitle: Constants.flowersNavigationTitle)
         view.addSubview(tableView)
         view.addSubview(noContentWarningView)
         view.addSubview(navigation)
