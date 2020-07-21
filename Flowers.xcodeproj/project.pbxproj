@@ -13,6 +13,7 @@
 		4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B7D0D057D478BA20C419 /* FlowerCell.swift */; };
 		4950B6920A6E7E545B2D6311 /* FlowersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B197EC94E65F6A655E42 /* FlowersTableView.swift */; };
 		4950B90824403731180C5A5C /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B298A6A8A3291AD35DD0 /* MyNavigationBar.swift */; };
+		4950B9B669C08CF3617141BD /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */; };
 		4950B9F8490560F2CBB42DBE /* FlowersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */; };
 		4950BA75E7DAD240500C0D8B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4C80962700BF344F120 /* Extensions.swift */; };
 		4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4750E3EE591017C886D /* DetailsViewController.swift */; };
@@ -42,6 +43,7 @@
 		4950B4C80962700BF344F120 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersResponse.swift; path = List/Data/FlowersResponse.swift; sourceTree = "<group>"; };
 		4950B7D0D057D478BA20C419 /* FlowerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowerCell.swift; path = List/Views/FlowerCell.swift; sourceTree = "<group>"; };
+		4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressIndicator.swift; path = Common/ProgressIndicator.swift; sourceTree = "<group>"; };
 		4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSource.swift; path = List/Data/FlowersDataSource.swift; sourceTree = "<group>"; };
 		4950BCD0320DAE7E6292D0D0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
 		4950BE3BA97642A4277F40BD /* NoContentWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoContentWarningView.swift; path = Common/NoContentWarningView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				4950B7D0D057D478BA20C419 /* FlowerCell.swift */,
 				4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */,
 				4950B4750E3EE591017C886D /* DetailsViewController.swift */,
+				4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */,
 			);
 			path = Flowers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */,
 				4950BE2D5372569AD230391B /* Dimensions.swift in Sources */,
 				4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */,
+				4950B9B669C08CF3617141BD /* ProgressIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

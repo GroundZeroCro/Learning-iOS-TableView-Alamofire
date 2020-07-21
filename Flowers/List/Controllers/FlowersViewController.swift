@@ -8,6 +8,7 @@ class FlowersViewController: UIViewController {
     private var navigation: MyNavigationBar!
     private let tableView = FlowersTableView()
     private let noContentWarningView = NoContentWarningView()
+    private var progressIndicator: ProgressIndicator!
     // Data
     private let flowersDataSource = FlowersDataSource()
 
@@ -24,14 +25,20 @@ class FlowersViewController: UIViewController {
         view.addSubview(navigation)
         tableView.instantiateTable(view: view, navigation: navigation, delegate: self, dataSource: self)
         noContentWarningView.initializeView(view: view)
+        progressIndicator = ProgressIndicator(view: view)
+        view.addSubview(progressIndicator)
     }
 }
 
 extension FlowersViewController: FlowersProtocol {
+    func onLoading() {
+        progressIndicator.startAnimating()
+    }
 
     func onSuccess(_ flowers: [String]) {
         self.flowers = flowers
         tableView.reloadData()
+        progressIndicator.stopAnimating()
     }
 
     func onError(message: String?) {
@@ -39,6 +46,7 @@ extension FlowersViewController: FlowersProtocol {
             ToastView.popUp(context: self, msg: message!)
             noContentWarningView.changeVisibility(isVisible: true)
         }
+        progressIndicator.stopAnimating()
     }
 }
 
