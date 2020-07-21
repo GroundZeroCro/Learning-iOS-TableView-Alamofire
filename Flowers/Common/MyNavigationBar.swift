@@ -27,15 +27,6 @@ class MyNavigationBar: UINavigationBar {
         setItems([navigationItem], animated: false)
     }
 
-
-    private func navigationBarHeight(largeTitle: Bool) -> CGFloat {
-        if (largeTitle) {
-            return CGFloat(100)
-        } else {
-            return CGFloat(0)
-        }
-    }
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
