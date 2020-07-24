@@ -5,7 +5,6 @@ class FlowersViewController: UIViewController {
 
     private var flowers: [String] = []
     // Views
-    private var navigation: MyNavigationBar!
     private let tableView = FlowersTableView()
     private let noContentWarningView = NoContentWarningView()
     private var progressIndicator: ProgressIndicator!
@@ -19,11 +18,9 @@ class FlowersViewController: UIViewController {
     }
 
     private func instantiateViews(view: UIView) {
-        navigation = MyNavigationBar(largeTitle: Constants.flowersNavigationTitle)
         view.addSubview(tableView)
         view.addSubview(noContentWarningView)
-        view.addSubview(navigation)
-        tableView.instantiateTable(view: view, navigation: navigation, delegate: self, dataSource: self)
+        tableView.instantiateTable(view: view, delegate: self, dataSource: self)
         noContentWarningView.initializeView(view: view)
         progressIndicator = ProgressIndicator(view: view)
         view.addSubview(progressIndicator)
@@ -68,6 +65,6 @@ extension FlowersViewController: UITableViewDataSource, UITableViewDelegate {
     private func onOpenButtonClick(flower: String) -> Void {
         let detailsController = DetailsViewController()
         detailsController.flower = flower
-        self.present(detailsController, animated: true)
+        self.navigationController?.pushViewController(detailsController, animated: true)
     }
 }

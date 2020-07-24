@@ -3,9 +3,9 @@ import UIKit
 
 class FlowersTableView: UITableView {
 
-    func instantiateTable(view: UIView, navigation: UINavigationBar, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+    func instantiateTable(view: UIView, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: navigation.bottomAnchor).isActive = true
+        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
