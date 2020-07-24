@@ -1,7 +1,7 @@
 import UIKit
 
 
-class FlowersViewController: UIViewController {
+class FlowersViewController: BaseViewController {
 
     private var flowers: [String] = []
     // Views
@@ -14,6 +14,7 @@ class FlowersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         instantiateViews(view: view)
+        setNavigationTitle(navigationTitle: Constants.flowersNavigationTitle)
         flowersDataSource.getData(callback: self)
     }
 
