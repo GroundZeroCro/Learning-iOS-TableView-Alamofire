@@ -12,11 +12,11 @@
 		4950B5C5AC44403D582A8ACF /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B221FB4CE91B88AA16AB /* ToastView.swift */; };
 		4950B649E997B94B3B182893 /* FlowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B7D0D057D478BA20C419 /* FlowerCell.swift */; };
 		4950B6920A6E7E545B2D6311 /* FlowersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B197EC94E65F6A655E42 /* FlowersTableView.swift */; };
+		4950B80E8E946643FDDBCBA3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B21C75122ED1713DAC13 /* DashboardViewController.swift */; };
 		4950B9B669C08CF3617141BD /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */; };
 		4950B9F8490560F2CBB42DBE /* FlowersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B6BF0B5AF1D2E4B5825D /* FlowersResponse.swift */; };
 		4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B4750E3EE591017C886D /* DetailsViewController.swift */; };
 		4950BB1C6FBD6B7C67408C4B /* FlowersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */; };
-		4950BB26F9D95DB704BECCDC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BE009E6D58D2C636CE32 /* BaseViewController.swift */; };
 		4950BB6F0D2294FF901D94C3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B00B70528B8A9DE9840F /* Colors.swift */; };
 		4950BB8C0E55892F69F99D7D /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950B0EB80EF5B1F5BAC74ED /* DeviceUtils.swift */; };
 		4950BC0BE116465EC1066024 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950BCD0320DAE7E6292D0D0 /* Constants.swift */; };
@@ -35,6 +35,7 @@
 		4950B0EB80EF5B1F5BAC74ED /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtils.swift; path = Utils/DeviceUtils.swift; sourceTree = "<group>"; };
 		4950B197EC94E65F6A655E42 /* FlowersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersTableView.swift; path = List/Views/FlowersTableView.swift; sourceTree = "<group>"; };
 		4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimensions.swift; path = Utils/Dimensions.swift; sourceTree = "<group>"; };
+		4950B21C75122ED1713DAC13 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
 		4950B221FB4CE91B88AA16AB /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Views/ToastView.swift; sourceTree = "<group>"; };
 		4950B23636A7577E8EDEC5D9 /* FlowersDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSourceProtocol.swift; path = List/Data/FlowersDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4950B4750E3EE591017C886D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = Details/DetailsViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressIndicator.swift; path = Views/ProgressIndicator.swift; sourceTree = "<group>"; };
 		4950BC79CCD2604AE8D5EFF4 /* FlowersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersDataSource.swift; path = List/Data/FlowersDataSource.swift; sourceTree = "<group>"; };
 		4950BCD0320DAE7E6292D0D0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
-		4950BE009E6D58D2C636CE32 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Views/BaseViewController.swift; sourceTree = "<group>"; };
 		4950BE3BA97642A4277F40BD /* NoContentWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoContentWarningView.swift; path = Views/NoContentWarningView.swift; sourceTree = "<group>"; };
 		4950BF127AC0B73CEDDAC8C3 /* FlowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowersViewController.swift; path = List/Controllers/FlowersViewController.swift; sourceTree = "<group>"; };
 		4CF253183E4C1500F16B0A22 /* Pods_Flowers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flowers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +115,8 @@
 				4950B208A3EFBB9DEAB5F7CE /* Dimensions.swift */,
 				4950B4750E3EE591017C886D /* DetailsViewController.swift */,
 				4950BC5BD0769EAC868699FC /* ProgressIndicator.swift */,
-				4950BE009E6D58D2C636CE32 /* BaseViewController.swift */,
 				4950B7805EC4C24F149C726F /* Extensions.swift */,
+				4950B21C75122ED1713DAC13 /* DashboardViewController.swift */,
 			);
 			path = Flowers;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 				4950BE2D5372569AD230391B /* Dimensions.swift in Sources */,
 				4950BA8B0E62F6FEB66460C9 /* DetailsViewController.swift in Sources */,
 				4950B9B669C08CF3617141BD /* ProgressIndicator.swift in Sources */,
-				4950BB26F9D95DB704BECCDC /* BaseViewController.swift in Sources */,
 				4950BDBEA617CFE933D6F6AE /* Extensions.swift in Sources */,
+				4950B80E8E946643FDDBCBA3 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

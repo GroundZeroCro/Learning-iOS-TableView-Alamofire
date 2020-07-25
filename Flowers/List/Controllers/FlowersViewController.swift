@@ -1,7 +1,7 @@
 import UIKit
 
 
-class FlowersViewController: BaseViewController {
+class FlowersViewController: UIViewController {
 
     private var flowers: [String] = []
     // Views
@@ -14,7 +14,6 @@ class FlowersViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         instantiateViews(view: view)
-        setNavigationTitle(navigationTitle: Constants.flowersNavigationTitle)
         flowersDataSource.getData(callback: self)
     }
 
@@ -25,6 +24,10 @@ class FlowersViewController: BaseViewController {
         noContentWarningView.initializeView(view: view)
         progressIndicator = ProgressIndicator(view: view)
         view.addSubview(progressIndicator)
+    }
+
+    private func setNavigationTitle(navigationTitle: String) {
+        self.navigationItem.title = navigationTitle
     }
 }
 

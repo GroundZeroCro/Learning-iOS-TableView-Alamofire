@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let flowersViewController = FlowersViewController()
+        let flowersViewController = DashboardViewController()
         let navigationController = UINavigationController(rootViewController: flowersViewController)
         navigationController.navigationBar.isTranslucent = false
         window!.rootViewController = navigationController
